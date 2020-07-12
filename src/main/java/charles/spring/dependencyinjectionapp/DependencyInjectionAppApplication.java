@@ -47,6 +47,13 @@ public class DependencyInjectionAppApplication {
 
 		System.out.println(constructorInjectedController.getGreeting());
 
+
+		System.out.println("############################");
+		System.out.println("Spring Factory Beans Example!!!");
+		System.out.println(ctx.getBean(PropertyInjectedController.class).getGreeting());
+		System.out.println(ctx.getBean(SetterInjectedController.class).getGreeting());
+		System.out.println(ctx.getBean(ConstructorInjectedController.class).getGreeting());
+
 	}
 
 }
